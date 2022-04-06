@@ -6,6 +6,4 @@ Imaging analysis techniques based on 1) easiness in image acquisition (Digital C
 ## Run
 - Place images on the folder along with the python script
 - Run ```python rgb.py``` via cmd
-- insert images and pop-up
-
-## Experimental results
+- insert images
