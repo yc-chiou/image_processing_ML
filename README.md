@@ -7,8 +7,8 @@ This is solar cell research to understand patterned ARC impact on its efficiency
 - Six models of surface
 
 ## Run
-- 
-- 
-- 
+- Place images on the folder along with the python script
+- Run python rgb.py via cmd
+- follow
 
 ## Experimental results
