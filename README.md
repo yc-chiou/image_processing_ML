@@ -1,14 +1,11 @@
-# image_processing_ML
+# image_processing_similarity
 
 ## What is this project about?
-This is solar cell research to understand patterned ARC impact on its efficiency. This study aims to understand the textured surface of ARC by using the python-meep simulation tool. Users could specify the desired parameters(pattern sharp, width, depth, symmetry).
-
-## Repository structure
-- Six models of surface
+Imaging analysis techniques based on 1) easiness in image acquisition (Digital Camera) and 2) availability of machine learning and statistical techniques packed into visual inspection
 
 ## Run
 - Place images on the folder along with the python script
-- Run python rgb.py via cmd
-- follow
+- Run ```python rgb.py``` via cmd
+- insert images and pop-up
 
 ## Experimental results
