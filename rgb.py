@@ -5,10 +5,8 @@ import myMath
 
 
 def main(path1, path2):
-    global para_threshold
-
-    path1 = path1 + '.JPG'
-    path2 = path2 + '.JPG'
+    path1 = path1 + '.jpg'
+    path2 = path2 + '.jpg'
     resolution1, hist1 = calculateHist(path1)
     plotHist(path1, hist1)
     resolution2, hist2 = calculateHist(path2)
@@ -20,18 +18,9 @@ def main(path1, path2):
         hist2[i] = hist2[i] / resolution2
    
     color = ['b', 'g', 'r']
-    similarity = 0
     for channel, col in enumerate(color):
-        similarity += myMath.similarity(hist1[channel], hist2[channel])
-        #print('Simiarity of channel ' + col + ' is ' + str(similarity))
-
-    print('\n\nAverage similarity : ' + str(similarity / 3))
-    print('Threshold : ' + str(para_threshold))
-    print('Highly similar samples ?')
-    if(similarity >= 3 * para_threshold):
-        print('Yes')
-    else:
-        print('No')
+        similarity = myMath.similarity(hist1[channel], hist2[channel])
+        print('Simiarity of channel ' + col + ' is ' + str(similarity))
 
 def calculateHist(path):
     img = cv2.imread(path, -1)
@@ -54,9 +43,6 @@ def plotHist(path, hist):
     plt.show()
 
 if __name__ == "__main__":
-    f = open("threshold.txt", "r")
-    para_threshold = float (f.readline())
-
     print('*********************************')
     print('*                               *')
     print('* Only jpg extension is allowed *')
